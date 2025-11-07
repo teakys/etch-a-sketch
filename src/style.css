@@ -20,18 +20,58 @@ body {
   width: 100%;
 }
 
-#btn {
+.buttons {
+  margin-right: 15px;
   padding: 0.5em;
+  box-shadow: 0.5em 0.5em black;
+  width: auto;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.buttons:hover {
+  box-shadow: 0.5em 0.5em gray;
+}
+
+.box-shadow {
+  box-shadow: 0.5em 0.5em gray;
+  opacity: 0;
+}
+
+input[type='range']{ accent-color: black; }
+
+#container-control {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 9em;
+  gap: 30px;
+  height: 100vh;
+  width: 100%;
+}
+
+#container-grid {
+  width: 100%;
+}
+
+button:active {
+  background-color: black;
+  color: white;
+}
+
+.toggled {
+  background-color: black;
+  color: white;
+  outline: 1px solid white;
+}
+
+.grid div{
+  display: flex;
+}
+.shadowed {
   box-shadow: 0.5em 0.5em black;
 }
 
-.grid {
-  display: flex;
-}
-
 .grid-element {
-  width: 1em;
-  height: 1em;
   background-color: white;
   outline: 1px black solid;
 }
