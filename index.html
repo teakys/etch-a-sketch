@@ -10,13 +10,18 @@
     <div id="container-control">
       <div>
         <button id="btn" class="buttons">New Grid</button>
-      <label for="size">Size</label>
+        <label for="size">Size:<span id="dimension">16x16</span></label>
       <input type="range" min="1" max="100" id="size" >
       </div>
       <div>
       <button id="rgb" class="buttons">RGB</button>
       <button id="opacity" class="buttons">Opacity</button>
       <button id="delete" class="buttons">Delete</button>
+      <button id="erase" class="buttons">Erase</button>
+      </div>
+      <div>
+        <label for="color">Color:</span></label>
+        <input type="color" id="color" style="box-shadow: 0.5em 0.5em black;"></button>
       </div>
       <div style="margin-top: auto;">
         <button style="font-size: 20px;" class="buttons"><a target="_blank" style="text-decoration: none;" href="https://github.com/teakys">Github</a></button>
